@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name>SSD</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet> 
+	<servlet-name>ServletControl</servlet-name> 
+	<servlet-class>controlador.ServletControl</servlet-class> 
+  </servlet> 
+  
+  <servlet> 
+	<servlet-name>ServletUpload</servlet-name> 
+	<servlet-class>controlador.ServletUpload</servlet-class> 
+   </servlet> 
+
+<servlet-mapping> 
+	<servlet-name>ServletControl</servlet-name> 
+	<url-pattern>/ServletControl</url-pattern> 
+</servlet-mapping> 
+
+<servlet-mapping> 
+	<servlet-name>ServletUpload</servlet-name> 
+	<url-pattern>/ServletUpload</url-pattern> 
+</servlet-mapping>
+</web-app>
